@@ -1,0 +1,253 @@
+/*
+=========================================
+ StagePass Global Styles
+ File: global.css
+ Version: 1.0.0
+=========================================
+*/
+
+/* ==========================
+   Body
+========================== */
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-md);
+    font-weight: var(--weight-normal);
+    background: var(--dark-bg);
+    color: var(--dark-text);
+    transition: background var(--transition-normal),
+                color var(--transition-normal);
+    overflow-x: hidden;
+}
+
+/* ==========================
+   Themes
+========================== */
+
+body.light-theme {
+    background: var(--light-bg);
+    color: var(--light-text);
+}
+
+body.dark-theme {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+/* ==========================
+   Container
+========================== */
+
+.container {
+    width: min(92%, var(--container-width));
+    margin: 0 auto;
+}
+
+/* ==========================
+   Sections
+========================== */
+
+.section {
+    padding: var(--space-3xl) 0;
+}
+
+/* ==========================
+   Typography
+========================== */
+
+h1 {
+    font-size: var(--font-3xl);
+    font-weight: var(--weight-bold);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: var(--font-2xl);
+    font-weight: var(--weight-bold);
+}
+
+h3 {
+    font-size: var(--font-xl);
+    font-weight: var(--weight-semibold);
+}
+
+h4 {
+    font-size: var(--font-lg);
+    font-weight: var(--weight-semibold);
+}
+
+p {
+    color: var(--dark-text-secondary);
+}
+
+body.light-theme p {
+    color: var(--light-text-secondary);
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 14px 28px;
+
+    border-radius: var(--radius-pill);
+
+    font-weight: var(--weight-semibold);
+
+    transition: all var(--transition-fast);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background: var(--color-primary-light);
+}
+
+.btn-secondary {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.card {
+    background: var(--dark-card);
+    border: 1px solid var(--dark-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+
+    transition: all var(--transition-normal);
+}
+
+body.light-theme .card {
+    background: var(--light-card);
+    border: 1px solid var(--light-border);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* ==========================
+   Images
+========================== */
+
+img {
+    border-radius: var(--radius-md);
+}
+
+/* ==========================
+   Inputs
+========================== */
+
+input,
+textarea,
+select {
+
+    width: 100%;
+
+    padding: 14px 18px;
+
+    border-radius: var(--radius-md);
+
+    border: 1px solid var(--dark-border);
+
+    background: var(--dark-surface);
+
+    color: var(--dark-text);
+
+}
+
+body.light-theme input,
+body.light-theme textarea,
+body.light-theme select {
+
+    background: var(--light-surface);
+
+    border: 1px solid var(--light-border);
+
+    color: var(--light-text);
+
+}
+
+/* ==========================
+   Utilities
+========================== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.rounded {
+    border-radius: var(--radius-lg);
+}
+
+.shadow {
+    box-shadow: var(--shadow-lg);
+}
+
+/* ==========================
+   Loading
+========================== */
+
+.loading {
+
+    pointer-events: none;
+
+    opacity: .7;
+
+}
+
+/* ==========================
+   Links
+========================== */
+
+a {
+
+    transition: color var(--transition-fast);
+
+}
+
+a:hover {
+
+    color: var(--color-primary);
+
+}
